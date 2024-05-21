@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ymovnprvl1bq"]
+
+[ext_resource type="PackedScene" uid="uid://calno8avfvjnl" path="res://background/background.tscn" id="1_b87y0"]
+[ext_resource type="PackedScene" uid="uid://dx35l6np12xir" path="res://dinoplayer/player.tscn" id="2_y617i"]
+[ext_resource type="PackedScene" uid="uid://ls1kyar5ke8b" path="res://floor/floor.tscn" id="3_ogsmu"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_b87y0")]
+
+[node name="Player" parent="Background" instance=ExtResource("2_y617i")]
+position = Vector2(127, 511)
+
+[node name="Floor" parent="." instance=ExtResource("3_ogsmu")]
